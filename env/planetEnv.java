@@ -95,12 +95,6 @@ public class planetEnv extends Environment {
             resourcemap[x][y] = true;
         }
 
-        planet[middle][middle + 5] = new Resource(1, 5);
-        resourcemap[middle][middle + 5] = true;
-
-        planet[middle + 5][middle] = new Resource(1, 5);
-        resourcemap[middle + 5][middle] = true;
-
         for(int i = 0; i<11; i++) {
 
             x = random.nextInt(gridSize);
@@ -147,7 +141,7 @@ public class planetEnv extends Environment {
 
     public boolean executeAction(String agent, Structure action) {
         try {
-            Thread.sleep(500);
+            Thread.sleep(20);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
