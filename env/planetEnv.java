@@ -137,6 +137,12 @@ public class planetEnv extends Environment {
 
         gui = new GUI(this);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public boolean executeAction(String agent, Structure action) {
